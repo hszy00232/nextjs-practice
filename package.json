@@ -15,6 +15,11 @@
     "react-dom": "^16.13.1"
   },
   "license": "MIT",
-  "keywords": ["next"],
-  "description": "A \"Hello World\" application with multiple pages that shows how Next.js routing works."
+  "keywords": [
+    "next"
+  ],
+  "description": "A \"Hello World\" application with multiple pages that shows how Next.js routing works.",
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
 }
