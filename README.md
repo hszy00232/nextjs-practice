@@ -1,21 +1,14 @@
-# Hello World example
+# 基于NextJS的应用实践
 
-This example shows the most basic idea behind Next. We have 2 pages: `pages/index.js` and `pages/about.js`. The former responds to `/` requests and the latter to `/about`. Using `next/link` you can add hyperlinks between them with universal routing capabilities. The `day` directory shows that you can have subdirectories.
+项目代码可以结合《[学习Next.js](https://segmentfault.com/a/1190000009604556)》来阅读会更清晰。
 
-## Deploy your own
+## 项目运行
 
-Deploy the example using [Vercel](https://vercel.com):
+* npm run dev 运行开发环境
+* npm run dev:node 运行自定义服务端的开发环境
+* npm run build 打包编译
+* npm run start 运行打包编译后的结果，但是自定义服务端不会运行
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/hello-world)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example hello-world hello-world-app
-# or
-yarn create next-app --example hello-world hello-world-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+部署后的运行，采用pm2
+* npm install -g pm2 全局安装pm2
+* NODE_ENV=production pm2 start ./server.js --name nextjs-practice 
